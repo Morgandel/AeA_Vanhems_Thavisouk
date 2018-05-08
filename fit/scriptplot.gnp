@@ -1,0 +1,42 @@
+set term png font Helvetica 12
+set output "OnlineTime.png"
+set grid
+set title 'Online(Temps)'
+set xlabel "Nombre d'objets"
+set ylabel 'Temps(ms)'
+plot 'time.dat' u 1:2 w lp t 'Next Fit', 'time.dat' u 1:3 w lp t 'First Fit', 'time.dat' u 1:4 w lp t 'Best Fit'
+
+set output "OnlineBox.png"
+set grid
+set title 'Online'
+set xlabel "Nombre d'objets"
+set ylabel 'Nombre de boites'
+plot 'nbBox.dat' u 1:2 w lp t 'Next Fit', 'nbBox.dat' u 1:3 w lp t 'First Fit', 'nbBox.dat' u 1:4 w lp t 'Best Fit'
+
+set output "OfflineTime.png"
+set grid
+set title 'Offline(Temps)'
+set xlabel "Nombre d'objets"
+set ylabel 'Temps(ms)'
+plot 'timeOffline.dat' u 1:2 w lp t 'Next Fit', 'timeOffline.dat' u 1:3 w lp t 'First Fit', 'timeOffline.dat' u 1:4 w lp t 'Best Fit'
+
+set output "OfflineBox.png"
+set grid
+set title 'Offline'
+set xlabel "Nombre d'objets"
+set ylabel 'Nombre de boites'
+plot 'nbBoxOffline.dat' u 1:2 w lp t 'Next Fit', 'nbBoxOffline.dat' u 1:3 w lp t 'First Fit', 'nbBoxOffline.dat' u 1:4 w lp t 'Best Fit'
+
+set output "OfflineRevTime.png"
+set grid
+set title 'Offline Reverse(Temps)'
+set xlabel "Nombre d'objets"
+set ylabel 'Temps(ms)'
+plot 'timeOfflineRev.dat' u 1:2 w lp t 'Next Fit', 'timeOfflineRev.dat' u 1:3 w lp t 'First Fit', 'timeOfflineRev.dat' u 1:4 w lp t 'Best Fit'
+
+set output "OfflineRevBox.png"
+set grid
+set title 'Offline Reverse'
+set xlabel "Nombre d'objets"
+set ylabel 'Nombre de boites'
+plot 'nbBoxOfflineRev.dat' u 1:2 w lp t 'Next Fit', 'nbBoxOfflineRev.dat' u 1:3 w lp t 'First Fit', 'nbBoxOfflineRev.dat' u 1:4 w lp t 'Best Fit'

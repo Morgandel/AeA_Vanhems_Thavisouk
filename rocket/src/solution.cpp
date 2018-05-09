@@ -27,7 +27,7 @@ Solution::Solution(Solution &solution, Experience *experience_ptr) {
   }
   this->experiences.emplace_back(experience_ptr);
   this->profit = solution.getProfit() + experience_ptr->getProfit();
-  this->weight = solution.getWeight() + solution.getWeight();
+  this->weight = solution.getWeight() + experience_ptr->getWeight();
 }
 
 

@@ -16,7 +16,7 @@ class ParetoFront {
  public:
     explicit ParetoFront(unsigned int n);
 
-    std::vector<Solution> *getParetoFront();
+    std::vector<Solution> *getParetoFront(bool sort);
 };
 
 #endif

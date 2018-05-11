@@ -1,0 +1,6 @@
+set term pngcairo size 960,720
+set output "ratio_sort.png"
+set xlabel "Nombre d'expériences"
+set ylabel "Temps de calcul (en secondes)"
+set title "Moyenne sur 10 tests du temps de calcul en secondes du front pareto\nen fonction du nombre d'expériences (triés par ordre croissant de rentabilité)"
+plot "ratio_sort.dat" with lines notitle

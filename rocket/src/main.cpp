@@ -13,7 +13,7 @@ int main(int argc, char **argv) {
 
   unsigned int n = parse_unsigned_int(input, "-n");
 
-  ParetoFront(n).getParetoFront();
+  ParetoFront(n).getParetoFront(true);
 
   return 0;
 }
